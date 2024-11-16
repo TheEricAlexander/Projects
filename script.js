@@ -1,4 +1,5 @@
-// No import statement needed
+// Remove or comment out this line
+// import * as THREE from './three.module.js';
 
 // Rest of your Three.js code
 const scene = new THREE.Scene();
