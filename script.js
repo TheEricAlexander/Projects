@@ -1,6 +1,6 @@
-import * as THREE from './three.module.js'; // Relative path to the file
+// No import needed; THREE is globally available from the CDN
 
-// Rest of your Three.js code
+// Create a scene
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
