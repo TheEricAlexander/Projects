@@ -1,8 +1,7 @@
-// No import statements needed
+// No import statement needed
 
-// Create a scene
+// Rest of your Three.js code
 const scene = new THREE.Scene();
-
 const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
