@@ -1,8 +1,13 @@
-// No import needed; THREE is globally available from the CDN
+// No import statement needed
 
-// Create a scene
+// Rest of your Three.js code
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(
+  75,
+  window.innerWidth / window.innerHeight,
+  0.1,
+  1000
+);
 camera.position.z = 5;
 
 // Set up a renderer
@@ -19,8 +24,8 @@ scene.add(sphere);
 
 // Animation loop
 function animate() {
-    requestAnimationFrame(animate);
-    sphere.rotation.y += 0.01;
-    renderer.render(scene, camera);
+  requestAnimationFrame(animate);
+  sphere.rotation.y += 0.01;
+  renderer.render(scene, camera);
 }
 animate();
